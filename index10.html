@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - Nina Fernando</title>
+
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+  }
+
+  body{
+    background:#f4f4f9;
+    color:#333;
+    line-height:1.6;
+    scroll-behavior:smooth;
+  }
+
+  header{
+    background:linear-gradient(90deg,#007acc,#00bfff);
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+  }
+
+  .foto-perfil{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #fff;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+  }
+
+  .foto-perfil:hover{
+    transform:scale(1.05);
+  }
+
+  header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+  }
+
+  nav{
+    margin-top:15px;
+  }
+
+  nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:color 0.3s;
+  }
+
+  nav a:hover{
+    color:#ffeb3b;
+  }
+
+  section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+  }
+
+  h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#007acc;
+  }
+
+  .sobre{
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .habilidades ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    list-style:none;
+  }
+
+  .habilidades li{
+    background:#007acc;
+    color:#fff;
+    padding:12px 20px;
+    margin:10px;
+    border-radius:5px;
+    transition:transform 0.3s;
+  }
+
+  .habilidades li:hover{
+    transform:scale(1.1);
+  }
+
+  .projetos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+  }
+
+  .projeto{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:transform 0.3s,box-shadow 0.3s;
+  }
+
+  .projeto:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .projeto h3{
+    margin-bottom:10px;
+    color:#007acc;
+  }
+
+  .projeto a{
+    display:inline-block;
+    margin-top:10px;
+    color:#00bfff;
+    text-decoration:none;
+    font-weight:bold;
+  }
+
+  .projeto a:hover{
+    text-decoration:underline;
+  }
+
+  .contato form{
+    display:flex;
+    flex-direction:column;
+    max-width:500px;
+    margin:auto;
+  }
+
+  .contato input,
+  .contato textarea{
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    transition:border-color 0.3s;
+  }
+
+  .contato input:focus,
+  .contato textarea:focus{
+    border-color:#007acc;
+    outline:none;
+  }
+
+  .contato button{
+    padding:12px;
+    background:#007acc;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:background 0.3s;
+  }
+
+  .contato button:hover{
+    background:#005fa3;
+  }
+
+  footer{
+    text-align:center;
+    padding:30px;
+    background:#333;
+    color:#fff;
+  }
+
+  @media(max-width:768px){
+    header h1{
+      font-size:2.2rem;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="IMG-20250909-WA0002.jpg" alt="Foto de Nina Fernando" class="foto-perfil">
+  <h1>Nina Fernando</h1>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="sobre" class="sobre">
+  <h2>Sobre Mim</h2>
+  <p>
+   Olá! Meu nome é Nina Fernando e sou desenvolvedora web em início de carreira.
+Em cinco meses de prática intensa, desenvolvi projetos como Portfólio Pessoal e Venda Fácil, aplicando HTML, CSS e JavaScript para criar interfaces funcionais e responsivas.
+Sou dedicada, curiosa e comprometida com o aprendizado contínuo, sempre buscando novas ferramentas e boas práticas de desenvolvimento.
+Meu objetivo é crescer na área de desenvolvimento web e resolver problemas por meio da tecnologia, contribuindo para projetos que unam criatividade, eficiência e boa experiência para o usuário.
+  </p>
+</section>
+
+<section id="habilidades" class="habilidades">
+  <h2>Habilidades</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+</section>
+
+<section id="projetos" class="projetos">
+  <h2>Projetos</h2>
+
+  <div class="projeto">
+    <h3>Portfólio Pessoal</h3>
+    <p>Meu portfólio online criado para mostrar meus projetos e habilidades.</p>
+  </div>
+
+  <div class="projeto">
+    <h3>Venda Fácil</h3>
+    <p>
+      Uma plataforma criada para conectar vendedores e compradores
+      de forma fácil, segura e acessível.
+
+
+       <a  href="https://nf6312539-ai.github.io/Novo-Reposirorio/">Ver projecto</a>
+
+    </p>
+  </div>
+
+</section>
+
+<section id="contato" class="contato">
+  <h2>Contato</h2>
+  <form>
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu email" required>
+    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Nina Fernando | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
